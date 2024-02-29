@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    -webkit-box-shadow: inset -200px -200px 0px 200px rgba(0,0,0,0.58);
+    -moz-box-shadow: inset -200px -200px 0px 200px rgba(0,0,0,0.58);
+    box-shadow: inset -200px -200px 0px 200px rgba(0,0,0,0.58);
+    cursor: pointer;
+}
+
+.container {
+    background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container__aluraLogo{
+    margin-top: .5rem;
+    height: 15%;
+    width: 72%;
+}
+
+.container__aluraLogo img{
+    height: 100%;
+    width: 115px;
+}
+
+.container__conteudoPrincipal {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container__conteudoPrincipal__input {
+    display: flex;
+    flex-direction: column;
+    margin: 0vh 5vw 0vh 15vw;
+    justify-content: space-between;
+    width: 48%;
+    height: 76vh;
+}
+
+.container__conteudoPrincipal__input textarea {
+    border: none;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    font-size: 2rem;
+    resize: none;
+    height: 52%;
+}
+
+.container__conteudoPrincipal__input__caixa{
+    display: flex;
+    gap: 1vh;
+    flex-direction: column;
+}
+
+.container__conteudoPrincipal__input__caixa__mensagemAviso {
+    display: flex;
+    font-size: 0.75rem;
+    opacity: 80%;
+}
+
+.container__conteudoPrincipal__input__caixa__mensagemAviso img{
+    margin-right: 0.600rem;
+}
+
+.container__conteudoPrincipal__input__caixa__botoes {
+    display: flex;
+    gap: 12%;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container__conteudoPrincipal__input__caixa__botoes button {
+    padding: 2vh 9%;
+    border-radius: 15px;
+    border-color: #0A3871;
+    border: 1px solid;
+    width: 24%;
+}
+
+#botaoCriptografar{
+    background-color: #0A3871;
+    color: #E9ECF8;
+}
+
+#botaoDescriptografar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.container__conteudoPrincipal__output{
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+
+.container__conteudoPrincipal__output__bloco {
+    background-color: #ffffff;
+    height: 100%;
+    width: 20vw;
+    margin-right: 1.5rem;
+    border-radius: 30px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    display: flex;
+    flex-direction: column;
+    color: #343A40;
+    justify-content: space-between;
+}
+
+.container__conteudoPrincipal__output__bloco-temporario {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.container__conteudoPrincipal__output__bloco-temporario img {
+    height: 60%;
+    width: 100%;
+}
+
+#container__conteudoPrincipal__output__bloco-temporario__titulo{
+    text-align: center;
+    margin: 2vh 1vh 1vh;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #343A40;
+}
+
+.container__conteudoPrincipal__output__bloco-temporario p{
+    font-size: 1rem;
+    color: #495057;
+    margin: 0 1vw;
+    text-align: center;
+}
+
+.container__conteudoPrincipal__output__bloco-saida {
+    resize: none;
+    margin: 5%;
+    font-size: 1.5rem;
+    color: #495057;
+    height: 83%;
+    border: none;
+}
+
+.container__conteudoPrincipal__output__bloco-botaoCopiar {
+    margin: 0 5% 5%;
+    padding: 2vh;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    color: #0A3871;
+}
+
+/*MEDIA PARA TABLET*/
+@media only screen and (max-width: 768px){
+
+    .container__conteudoPrincipal{
+        flex-direction: column;
+        align-items: center;
+        height: 85%;
+        margin-top: 4vh;
+    }
+
+    .container__conteudoPrincipal__input{
+        width: 92%;
+        margin: 0;
+    }
+
+    .container__conteudoPrincipal__input__caixa{
+        margin-bottom: 5vh;
+    }
+
+    .container__conteudoPrincipal__input__caixa__botoes{
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .container__conteudoPrincipal__input__caixa__botoes button{
+        width: 34%;
+        padding: 2vh 6%;
+    }
+    
+    .container__conteudoPrincipal__output{
+        width: 100%;
+        height: 39%;
+    }
+    
+    .container__conteudoPrincipal__output__bloco{
+        height: 131%;
+        width: 95%;
+        margin: 0;
+    }
+
+    .container__conteudoPrincipal__output__bloco-temporario {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container__conteudoPrincipal__output__bloco-temporario img {
+        height: 0%;
+        width: 0%;
+    }
+}
+
+/*MEDIA PARA CELULAR*/
+@media only screen and (max-width: 375px){
+
+    .container__conteudoPrincipal__input__caixa__botoes{
+        flex-direction: column;
+    }
+
+    .container__conteudoPrincipal__input__caixa__botoes button{
+        width: 70%;
+        padding: 2vh 14vw;
+    }
+}
+    

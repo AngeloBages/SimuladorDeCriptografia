@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografador de Texto</title>
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+</head>
+<body>
+    <main class="container">
+
+        <!--Logo da Alura-->
+        <nav class="container__aluraLogo">
+                <a href="https://www.alura.com.br/">
+                    <img src="./src/assets/alura-icon.svg" alt="Logo da alura">
+                </a>
+        </nav>
+
+        <!--Container principal-->
+        <div class="container__conteudoPrincipal">
+            
+            <section class="container__conteudoPrincipal__input">
+                <textarea name="" id="inputEntrada" cols="2" rows="2" placeholder="Digite seu texto"></textarea>
+                <div class="container__conteudoPrincipal__input__caixa">
+                    <div class="container__conteudoPrincipal__input__caixa__mensagemAviso">
+                    <img src="./src/assets/ponto-de-exclamacao.svg" alt="Ponto de Exclamação">
+                    <p>Apenas letras maiúsculas e sem acento.</p>
+                    </div>
+                    <div class="container__conteudoPrincipal__input__caixa__botoes">
+                        <button id="botaoCriptografar" onclick="criptografar()">Criptografar</button>
+                        <button id="botaoDescriptografar" onclick="descriptografar()">Descriptografar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container__conteudoPrincipal__output">
+                <div class="container__conteudoPrincipal__output__bloco" onclick="gerarInputSaida()">
+                    <div class="container__conteudoPrincipal__output__bloco-temporario">
+                        <img src="./src/assets/pessoa-usando-uma-lupa.svg" alt="Pessoa olhando com uma lupa">
+                        <p id="container__conteudoPrincipal__output__bloco-temporario__titulo">
+                            Nenhuma mensagem encotrada
+                        </p>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>    
+
+    <script src="./src/scripts/script.js"></script>
+</body>
+</html>
